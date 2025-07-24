@@ -1,6 +1,5 @@
 /* ========== Responsive ========== */
 
-/* Extra small devices (phones, less than 576px) */
 @media (max-width: 991.98px) {
     /* Header */
     #home,
@@ -99,6 +98,9 @@
     }
 
     /* latest deals */
+    .latest-deals {
+        padding: 0 16px;
+    }
     .latest-deals-wrapper {
         flex-direction: column;
     }
@@ -108,9 +110,14 @@
         padding-bottom: 44px;
     }
 
-    .latest-three {
-        width: 366.222px;
-        height: 206px;
+    .latest-small-thumb,
+    .latest-big-thumb {
+        width: 100%;
+    }
+
+    .latest-section-bg {
+        width: 100%;
+        height: 200px;
     }
 
     .latest-section-bg h2 {
@@ -147,22 +154,28 @@
     }
 }
 
-/* Small devices (phones, 576px and up) */
-/* @media (min-width: 576px) and (max-width: 767.98px) {
-} */
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-}
-
-/* Large devices (laptops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-}
+    /* Header, Hero */
+    .header-section,
+    .hero-area,
+    .our-plants,
+    .flower-store,
+    .latest-deals,
+    .footer-section {
+        padding: 30px;
+    }
+    /* Latest Deals */
+    .latest-small-thumb,
+    .latest-big-thumb {
+        width: 50%;
+    }
 
-/* Extra large devices (desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-}
+    .latest-section-bg {
+        width: 100%;
+    }
 
-/* XXL devices (very large screens, 1400px and up) */
-@media (min-width: 1400px) {
+    /* Flower Store */
+    .flower-store {
+        padding-top: 100px;
+    }
 }
