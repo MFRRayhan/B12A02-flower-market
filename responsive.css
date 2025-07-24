@@ -1,0 +1,168 @@
+/* ========== Responsive ========== */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 991.98px) {
+    /* Header */
+    #home,
+    #shop,
+    #aboutUs {
+        display: none;
+    }
+
+    .header-section,
+    .hero-text {
+        padding: 16px;
+    }
+
+    .header-logo a img {
+        width: 63px;
+        height: 38px;
+    }
+
+    /* Hero */
+    .hero-area {
+        padding-top: 28px;
+        padding-bottom: 65px;
+    }
+
+    .hero-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-banner img {
+        width: 100%;
+    }
+
+    /* Our Plant */
+    .section-title {
+        padding: 0 29.5px;
+    }
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .plant-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .single-plant-box {
+        width: calc(50% - 10px);
+    }
+
+    .plant-boxes {
+        padding: 0 15px;
+        margin-top: 28px;
+    }
+
+    .our-plants {
+        padding-bottom: 41.5px;
+    }
+
+    /* Flower Store */
+    .trusted-badge {
+        display: none;
+    }
+
+    .store-big-img {
+        width: 100%;
+    }
+
+    .flower-store-wrapper {
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 15px;
+    }
+
+    .flower-store-text h2 {
+        font-size: 24px;
+    }
+
+    .flower-store-text ul li {
+        font-size: 14px;
+    }
+
+    .flower-store-text ul {
+        padding-left: 20px;
+    }
+
+    /* latest deals */
+    .latest-deals-wrapper {
+        flex-direction: column;
+    }
+
+    .latest-deals-wrapper {
+        padding-top: 47px;
+        padding-bottom: 44px;
+    }
+
+    .latest-three {
+        width: 366.222px;
+        height: 206px;
+    }
+
+    .latest-section-bg h2 {
+        font-size: 20px;
+    }
+
+    .latest-three .transparent-btn {
+        font-size: 16px;
+    }
+
+    /* Subscribe */
+    .subscribe-section {
+        padding-top: 110px;
+        padding-bottom: 62px;
+    }
+
+    .subscribe-wrapper h2 {
+        font-size: 20px;
+    }
+
+    .subscribe-form {
+        padding: 0 36px;
+    }
+
+    .subscribe-form button {
+        padding: 13px 15px;
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+} */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (laptops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* XXL devices (very large screens, 1400px and up) */
+@media (min-width: 1400px) {
+}

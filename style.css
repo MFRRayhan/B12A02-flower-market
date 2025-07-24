@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*                                 Global CSS                                 */
+/* -------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-color: #e95a08;
+    --white: #fff;
+    --deep-orange: #cc4f06;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #00000080;
+    background-color: #f5f8ff;
+    font-size: 22px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.m-30 {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section {
+    padding-top: 24.5px;
+    padding-bottom: 114.5px;
+}
+
+.header-logo a img {
+    width: 135px;
+    height: 82px;
+}
+
+ul.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+}
+
+.header-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+
+ul.main-menu li a {
+    text-transform: capitalize;
+    line-height: 24px;
+    transition: all 0.3s ease-in-out;
+    color: #8987a1;
+    font-size: 16px;
+}
+
+ul.main-menu li a.active,
+ul.main-menu li a:hover {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Hero area */
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hero-text h2 {
+    font-size: 65px;
+}
+
+.hero-area {
+    padding-top: 106px;
+    padding-bottom: 120px;
+}
+
+.hero-banner img {
+    width: 570px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Our Plant                                 */
+/* -------------------------------------------------------------------------- */
+.our-plants {
+    padding-bottom: 210px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.plant-boxes {
+    margin-top: 49px;
+}
+
+.plant-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.single-plant-box {
+    text-align: center;
+}
+
+.flower-name {
+    color: #111;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.flower-price {
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.boxed-btn {
+    display: block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.boxed-btn:hover {
+    background-color: var(--deep-orange);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                flower store                                */
+/* -------------------------------------------------------------------------- */
+.flower-store {
+    padding-bottom: 134px;
+}
+
+.flower-store-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.store-big-img {
+    width: 540px;
+}
+
+.trusted-badge {
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    right: -17%;
+    top: -21%;
+}
+
+.flower-store-img {
+    position: relative;
+}
+
+.flower-store-text h2 {
+    font-size: 50px;
+}
+
+.flower-store-text ul {
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Latest Deals                                */
+/* -------------------------------------------------------------------------- */
+.latest-deals-wrapper {
+    padding: 120px 0;
+}
+
+.latest-section-bg {
+    background-image: url(assets/deal-bloom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    width: 366.222px;
+    height: 206px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.latest-section-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #333;
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.latest-two {
+    background-image: url(assets/deal-ana.png);
+}
+
+.latest-three {
+    background-image: url(assets/deal-zabo.png);
+    width: 753px;
+    height: 430px;
+}
+
+.latest-deals-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+
+.latest-small-thumb {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.latest-section-bg h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.transparent-btn {
+    display: inline-block;
+    padding: 26px 50px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.latest-three .transparent-btn {
+    font-size: 28px;
+}
+
+.latest-section-bg h2 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             newsletter section                             */
+/* -------------------------------------------------------------------------- */
+
+.subscribe-section {
+    background-image: url(assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    background-position: center;
+    padding-top: 199px;
+    padding-bottom: 193px;
+}
+
+.subscribe-wrapper h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.subscribe-wrapper {
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    padding: 0 165px;
+    margin-top: 23px;
+}
+
+.subscribe-form input[type='email'] {
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: none;
+}
+
+.subscribe-form button {
+    background-color: #e95a08;
+    color: white;
+    border: none;
+    padding: 13.5px 55px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.subscribe-form button:hover {
+    background-color: #cc4d06;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-logo img {
+    width: 135px;
+    margin-bottom: 16px;
+}
+
+.footer-section {
+    padding: 50px 0;
+}
+
+.footer-logo p {
+    width: 359px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-menu ul li a {
+    font-size: 16px;
+    color: #6b7280;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-menu ul li a:hover {
+    color: #e95a08;
+}
