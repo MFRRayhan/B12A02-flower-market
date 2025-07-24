@@ -98,10 +98,8 @@
     }
 
     /* latest deals */
-    .latest-deals {
-        padding: 0 16px;
-    }
     .latest-deals-wrapper {
+        padding: 0 16px;
         flex-direction: column;
     }
 
