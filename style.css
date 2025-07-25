@@ -150,7 +150,7 @@ ul.main-menu li a:hover {
 }
 
 .section-title {
-    width: 888px;
+    max-width: 888px;
     margin: 0 auto;
 }
 
